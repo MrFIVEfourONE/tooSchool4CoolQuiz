@@ -1,1 +1,1 @@
-# tooSchool4CoolQuiz
+import r$
