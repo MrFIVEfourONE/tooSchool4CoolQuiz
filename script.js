@@ -1,25 +1,38 @@
 // importing El form DOM
+const containerEl = document.querySelector( "#container" );
+const questionContainerEl = document.querySelector( "#questionContainer" );
+const gameCardEl = document.querySelector( "#gameCard" );
 const questionTitleEl = document.querySelector( "#questionTitle" );
-
 const choiceContainerEl = document.querySelector( "#choiceContainer" );
-
 const rightOrWrongEl = document.querySelector( "#rightWrong" );
-
 const timerEl = document.querySelector( "#timer" );
-
-const endGameEL = document.querySelector( "#endGame" );
-
 const highScoreEl = document.querySelector( "#highScore" );
-
-const restart = document.querySelector( "#restart" );
-
-let leaderList = document.querySelector( "#leaderBoards" );
-
+const endGameEL = document.querySelector( "#endGame" );
+// let leaderList = document.querySelector( "#leaderBoards" );
 let leaderboard = [];
-
 let questionIndex = 0;
-
 let timeRemaining = 60;
+
+function startGame() {
+    start.style.display = "block";
+    let button = document.createElement( "button" );
+    button.setAttribute( "class", "btn" )
+    button.click( startQuiz() )
+    quiz.style.display = "none"
+}
+
+// start quiz
+function startQuiz() {
+    start.style.display = "none";
+    quiz.style.display = "block";
+    timeRemaining = startTimer( 60, display );
+    timeRemaining--;
+    timerEl.textContent = "time: " + timeRemaining;
+    if ( timeRemaining <= 0 ) {
+        endQuiz();
+    }
+    1000
+};
 
 const questions = [ {
         title: "what is 1 + 1",
@@ -43,7 +56,7 @@ function generateQuestion() {
     choiceContainerEl.innerHTML = "";
     currentQuestion.choices.forEach( function ( value ) {
         let button = document.createElement( "button" );
-        button.setAttribute( "class", "btnChoice" )
+        button.setAttribute( "class", "btn" )
         button.setAttribute( "value", value )
         button.textContent = value;
         button.onclick = buttonClicked()
@@ -68,6 +81,8 @@ function buttonClicked() {
 
     generateQuestion()
 }
+
+
 
 // score render
 function scoreRender() {
@@ -104,25 +119,9 @@ function scoreRender() {
 };
 
 function clockTicks() {
-    timeRemaining--;
-    timerEl.textContent = "time: " + timeRemaining;
-    if ( timeRemaining <= 0 ) {
-        endQuiz()
-    }
-};
-
-function setInterval( clockTicks, 1000 ) {
-    let clockTicks = 1000
-};
 
 
-function start() {
-    generateQuestion()
-    clockTicks()
-};
-
-function endQuiz() {
-    endGameEL.textContent = "GAMEOVER";
-    prompt( "New High Score n/(Not really you did horrible)" );
-    location.replace( URL: "./highscoresandtitle.html" );
-};
+    function endQuiz() {
+        endGameEL.textContent = "GAMEOVER";
+        prompt( "New High Score n/(Not really you did horrible)" );
+    };

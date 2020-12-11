@@ -9,30 +9,37 @@
 </head>
 
 <body>
+
     <header>
-        <!-- the timer -->
-        <div class="btn" id="timerDiv">
-            <p id="timer">TIMER!</p>
-        </div>
-        <!-- the current score and link to page with high scores -->
-        <!-- <div class="btn" id="highScores">
-            <a href="./leaderboard.html">Check out the HIGH Scores!</a>
-            <p id="scoreCurrent">Score</p>
-        </div> -->
+        <!--- the timer -->
+        <span>
+            <div class="btn">
+                <p id="timer">TIMER!</p>
+            </div>
+            <!-- the current score and link to page with high scores -->
+            <div class="btn">
+                <p id="highScores" href=" ./leaderboard.html">Check out the HIGH Scores!</p>
+            </div>
+        </span>
     </header>
 
     <br>
-
-    <div clas="container" id="questionCointainer">
-        <div id="game" class="justify-center flex-column">
-            <h2 id="questionTitle"></h2>
-            <div id="choiceContainer"></div>
-            <div id="rightWrong"></div>
+    <main>
+        <div class=" justify-center flex-column" id="container">
+            <div id="questionCointainer">
+                <div id="gameCard" class="justify-center flex-column">
+                    <h2 id="questionTitle"></h2>
+                    <div id="choiceContainer"></div>
+                    <div id="rightWrong"></div>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
+    <br>
 
-    <div class="endGame"></div>
-
+    <footer>
+        <div class="justify-center flex-column" id="endGame"></div>
+    </footer>
 
 
 
