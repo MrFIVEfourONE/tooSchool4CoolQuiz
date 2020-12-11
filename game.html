@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-d
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +9,30 @@ d
 </head>
 
 <body>
+    <!-- the timer -->
+    <header>
+        <div class="btn" id="timerDiv">
+            <p id="timer">TIMER!</p>
+        </div>
+        <!-- the current score and link to page with high scores --> -->
+        <div class="btn" id="highScores">
+            <a href="./highscoresandtitle.html">Check out the HIGH Scores!</a>
+            <p id="scoreCurrent">Score</p>
+        </div>
+    </header>
 
-    <div clas="container">
+    <br>
+
+    <div clas="container" id="question-cointainer">
         <div id="game" class="justify-center flex-column">
             <h2 id="question-title"></h2>
             <div id="choice-container"></div>
             <div id="right-wrong"></div>
-
         </div>
     </div>
+
+    <div class="endGame"></div>
+
 
 
 
