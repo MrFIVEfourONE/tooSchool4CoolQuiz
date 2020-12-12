@@ -1,8 +1,100 @@
+/* more general stuff */
+#sectionIndaBack {
+    background-image: url(./assets/backgroundQuiz.jfif)
+}
+
+
+.flexTop {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    margin: 2rem 10rem;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+
+}
+
+#right {
+    align-self: flex-end;
+
+
+}
+
+
+#left {
+    align-self: flex-start;
+
+}
+
+.headerContainer {
+    width: 100%;
+    display: flexbox;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* max-width: 80rem; */
+    /* maz-width: 80rem; */
+    /* height: 100rem; */
+}
+
+#question {
+    text-align: center;
+}
+
+/* for the main page where JS will render the questions */
 .flexCenter {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-bottom: 0.5rem;
     width: 100%;
     font-size: 1.8rem;
     border: 0.1rem solid rgb(86, 165, 235, 0.25);
-    background-color: white;
+    background-color: rgb(22, 151, 140);
+    -webkit-border-radius: 0px 0px 40px 40px;
+    -moz-border-radius: 0px 0px 40px 40px;
+    border-radius: 0px 0px 40px 40px;
+    box-shadow: inset 2px 2px 41px -5px black;
+}
+
+.choiceContainer {
+    box-shadow: inset 2px 2px 41px -5px black;
+    background-color: rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+    display: flex;
+    -webkit-border-radius: 40px 40px 40px 40px;
+    -moz-border-radius: 40px 40px 40px 40px;
+    border-radius: 40px 40px 40px 40px;
+
+}
+
+
+.choicePrefix {
+    cursor: pointer;
+    padding: 1.5rem 2.5rem;
+    margin-left: 3rem;
+    background-color: #225a01;
+    color: slategray;
+    -webkit-border-radius: 40px 0px 40px 0px;
+    -moz-border-radius: 40px 0px 40px 0px;
+    border-radius: 40px 0px 40px 0px;
+}
+
+
+.choiceText {
+    padding: 1.5rem;
+    margin-left: 7rem;
 }
