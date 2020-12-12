@@ -20,14 +20,10 @@ let questions = [ {
     },
     {
         question: "Which of the following will write the message“ Hello World!” in an alert box ?",
-        choice1: "alertBox("
-        Hello World!");",
-        choice2: "alert("
-        Hello World!");",
-        choice3: "msgAlert("
-        Hello World!");",
-        choice4: "alert("
-        Hello World!");",
+        choice1: " alertBox('Hello World!'); ",
+        choice2: "alert('Hello World!');",
+        choice3: "msgAlert('Hello World!');",
+        choice4: "alert('Hello World!');",
         answer: 4,
     },
     {
@@ -55,3 +51,44 @@ let questions = [ {
         answer: 1,
     },
 ];
+
+const correctBonus = 10;
+const maxQuestions = 3;
+
+function startGame() {
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [ ...questions ];
+    getNewQuestion();
+};
+
+function getNewQuestion() {
+    if ( availableQuestions === 0 || maxQuestions <= questionCounter ) {
+        return window.location.assign( "/end.html" );
+    }
+}
+questionCounter++;
+const questionIndex = math.floor( Math.random() * availableQuestions.length );
+question.innerText = currentQuestion.question;
+
+choices.forEach( ( choice ) => {
+    const number = choice.dataset[ "number" ];
+    choice.innerText = currentQuestion[ "choice" + number ];
+
+} );
+
+availableQuestions.splice( questionIndex, 1 );
+acceptingAnswer = true;
+
+choices.forEach( ( choice ) => {
+    choice.addEventListener( "click", ( e ) => {
+        if ( !acceptingAnswers ) return;
+
+        acceptingAnswers = false;
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset[ "number" ];
+        getNewQuestion();
+    } );
+} );
+
+startGame()
