@@ -1,9 +1,4 @@
+// dynamicaly run questions through a loop with an array and post to elements in html
 
-function displayGiphy ()
-{
-    api_key = ckG69rBbLRIdqy5HQwEOukavar73rKDf
-
-
-    api_key: string( required );
-
-}
+const question = document.getElementById( 'question' );
+const choices = Array.from( document.getElementsByClassName( 'choice-text' ) );
