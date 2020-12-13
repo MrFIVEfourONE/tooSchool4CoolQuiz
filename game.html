@@ -1,46 +1,57 @@
+</html>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2scool4ForKoolquiz</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quick Quiz - Play</title>
+    <link rel="stylesheet" href="/flipFlopStrap.css" />
+    </head>
 
 <body>
-    <section id="sectionInDaBack">
-        <header class="headerContainer">
-            <div id="left" class="flexTop">High Scores!</div>
-            <div id="middleDiv" class="flexTop"></div>
-            <div id="right" class="flexTop">Timer!</div>
-        </header>
-        <div class="container">
-            <div id="game" class="flexCenter">
-                <h2 id="question">This will be on the mid-term!</h2>
-                <div class="choiceContainer">
-                    <p class="choicePrefix">A</p>
-                    <p class="choiceText">Choice 1</p>
+    <div class="container">
+        <div id="loader"></div>
+        <div id="game" class="justify-center flex-column hidden">
+            <div id="hud">
+                <div id="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                        Question
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
                 </div>
-
-                <div class="choiceContainer">
-                    <p class="choicePrefix">B</p>
-                    <p class="choiceText">Choice 2</p>
-                </div>
-
-                <div class="choiceContainer">
-                    <p class="choicePrefix">C</p>
-                    <p class="choiceText">Choice 3</p>
-                </div>
-
-                <div class="choiceContainer">
-                    <p class="choicePrefix">D</p>
-                    <p class="choiceText">Choice 4</p>
+                <div id="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
                 </div>
             </div>
+            <h2 id="question"></h2>
+            <div class="choice-container">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text" data-number="1"></p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text" data-number="2"></p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text" data-number="3"></p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text" data-number="4"></p>
+            </div>
         </div>
-    </section>
-    <script src="script.js"></script>
+    </div>
+    <script src="game.js"></script>
 </body>
 
 </html>
