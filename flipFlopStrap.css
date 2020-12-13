@@ -1,36 +1,53 @@
-/* more general stuff */
-.headerContainer {
-    display: flex;
-    flex-direction: row;
-    background-color: burlywood;
-
-    /* margin-top: 7rem;
-    margin-bottom: 2rem; */
-
-
+/* some pre defined classes..... i think that wierd red squshy thing inside my head has had a lightbulb moment.... */
+input::placeholder {
+    color: #aaa;
 }
 
+/* maybe i could fix up ----1ONE1 BADASS---- style.css sheet with a bunch of generic shit like the following lines of code and then i would get real famular with my pre built style sheet ' . ' ' # ' thingys and then every time i start a new project i will automaticaly link it..... perhaps i shall call it flipFlopStrap.css!!!!
+  HEY! dont go stealing my awsome idea and change the name to... something like shoeLace or something equally as lame, and dont laugh at me spelling */
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* more general stuff */
 #sectionIndaBack {
     display: flex;
 }
 
-
-.flexTop {
+.headerContainer {
     display: flex;
-    font-size: 1.8rem;
-    padding: 2rem;
-    max-width: 20%;
-    text-align: center;
-    border: 0.1rem solid #56a5eb;
-    margin: 1rem;
-    text-decoration: none;
-    color: #56a5eb;
-    background-color: white;
+    flex-direction: row;
+    background-color: burlywood;
+}
+
+/* this next one seems silly until it doesnt... i was like dude dont code shit you want to be hidden! JEZZ dumby!  Then i rememberd that
+(dynamicDOMjsMANIPULATION => css , html)....
+thats what they say anyway. i belive it to be evil, black magic if you will */
+
+
+.hidden {
+    display: none;
 }
 
 
+/* these two next ones have erned thir right to be here, they were born just 15hours ago... 12/12/20 at about noon yesterday. At one point in this boondogle of a dog and pony show im trying to call a quiz they played a very vital role and i spent hours trying to get them to work properly and never did becasue im going in a differnt direction now....again...again*/
 
-#right {
+/* #right {
     object-position: end;
     -webkit-border-radius: 40px 0px 0px 40px;
     -moz-border-radius: 40px 0px 0px 40px;
@@ -38,15 +55,6 @@
 
 }
 
-/* #middleDiv { */
-/* position: cent;
-    -webkit-border-radius: 40px 40px 40px 40px;
-    -moz-border-radius: 40px 40px 40px 40px;
-    border-radius: 40px 40px 40px 40px;
-    background-image: url("./assets/quitTopDiv.jpg");
-    background-attachment: fixed;
-    background-position: static; */
-/* } */
 
 #left {
     position: start;
@@ -54,28 +62,18 @@
     -moz-border-radius: 0px 40px 40px 0px;
     border-radius: 0px 40px 40px 0px;
 
-}
+} */
 
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    /* max-width: 80rem; */
-    /* maz-width: 80rem; */
-    /* height: 100rem; */
-}
 
-#question {
-    text-align: center;
-}
+/* flexCenter is the love child of flex-center flex-column.... (i know, inter-species breeding is not cool)
+2 classes > 1 abomination,
+but it too has earned its spot here just like the Hashtag twins; Left and Right
+flexTop was in on the fuckery too */
 
-/* for the main page where JS will render the questions */
-.flexCenter {
+/* .flexCenter {
     display: flex;
     flex-direction: column;
-    /* content: -webkit-flex; */
     justify-content: center;
     margin-bottom: 0.5rem;
     width: 100%;
@@ -86,6 +84,34 @@
     -moz-border-radius: 0px 0px 40px 40px;
     border-radius: 0px 0px 40px 40px;
     box-shadow: inset 2px 2px 41px -5px black;
+}
+/* .flexTop {
+    display: flex;
+    font-size: 1.8rem;
+    padding: 2rem;
+    max-width: 20%;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    margin: 1rem;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+} */
+
+/* sorry to drag you through the graveyard, real professional i know, it as imporessive as my sweet spellin skils */
+
+
+
+/*  line 106-143 are where all the black magic is going to take place */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#question {
+    text-align: center;
 }
 
 .choiceContainer {
@@ -100,7 +126,6 @@
 
 }
 
-
 .choicePrefix {
     cursor: pointer;
     padding: 1.5rem 2.5rem;
@@ -112,11 +137,12 @@
     border-radius: 40px 0px 40px 0px;
 }
 
-
 .choiceText {
     padding: 1.5rem;
     margin-left: 7rem;
 }
+
+/* button shit */
 
 .btn {
     font-size: 1.8rem;
@@ -156,6 +182,7 @@
 
 
 /* some more shit */
+
 form {
     width: 100%;
     display: flex;
@@ -170,31 +197,4 @@ input {
     font-size: 1.8rem;
     border: none;
     box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-}
-
-
-/* some pre defined classes..... i think that wierd red squshy thing inside my head has had a lightbulb moment.... */
-input::placeholder {
-    color: #aaa;
-}
-
-/* maybe i could fix up ----1ONE1 BADASS---- style.css sheetwith a bunch of generic shit like the following lines of code and get real famular with my pre built css .# thingys and then every time i start a new project i will automaticaly link it..... perhaps i shall call it flipFlopStrap.css!!!!
-  HEY! dont go stealing my awsome idea and change the name to... something like shoeLace or something equally as lame */
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-center {
-    justify-content: center;
-    align-items: center;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.text-center {
-    text-align: center;
 }
