@@ -12,8 +12,10 @@
 
 <body>
     <!-- this element highName is hidden until end game and functions as the highscore page -->
-    <header class="left" id="timer">
-        <div id="time-remaining">Time: 60</div>
+    <header class="containerTop">
+        <div class="left" id="timer">
+            <div id="time-remaining">Time: 60</div>
+        </div>
     </header>
     <article class="highName">
         <div class="container">
@@ -35,10 +37,10 @@
     <article class="peekAboo">
         <div class="container">
             <h2 id="question"></h2>
-            <button class="choicePrefix choiceText choiceContainer" data-number="1"></button>
-            <button class="choicePrefix choiceText choiceContainer"" data-number=" 2"></button>
-            <button class="choicePrefix choiceText choiceContainer"" data-number=" 3"></button>
-            <button class="choicePrefix choiceText choiceContainer" data-number="4"></button>
+            <button class="choiceText" data-number="1"></button>
+            <button class="choiceText" data-number="2"></button>
+            <button class="choiceText" data-number="3"></button>
+            <button class="choiceText" data-number="4"></button>
         </div>
     </article>
     <script src="/game.js"></script>

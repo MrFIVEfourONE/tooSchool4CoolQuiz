@@ -7,6 +7,10 @@ input::placeholder {
 /* maybe i could fix up ----1ONE1 BADASS---- style.css sheet with a bunch of generic shit like the following lines of code and then i would get real famular with my pre built style sheet ' . ' ' # ' thingys and then every time i start a new project i will automaticaly link it...perhaps i shall call it flipFlopStrap.css!!!!
 HEY! dont go stealing my awsome idea and change the name to... something like shoeLace or something equally as lame, and dont laugh at me spelling */
 
+body {
+    background-color: black;
+}
+
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -25,68 +29,9 @@ HEY! dont go stealing my awsome idea and change the name to... something like sh
     text-align: center;
 }
 
-/* .headerContainer {
-    display: flex;
-    flex-direction: row;
-    background-color: burlywood;
-} */
-
-/* this next one seems silly until it doesnt... i was like dude dont code shit you want to be hidden! JEZZ dumby!  Then i rememberd that
-(dynamicDOMjsMANIPULATION => css , html)....
-thats what they say anyway. i belive it to be evil, black magic if you will */
-
-
 .hidden {
     display: none;
 }
-
-
-/* these two next ones have erned thir right to be here, they were born just 15hours ago... 12/12/20 at about noon yesterday. At one point in this boondogle of a dog and pony show im trying to call a quiz they played a very vital role and i spent hours trying to get them to work properly and never did becasue im going in a differnt direction now....again...again*/
-
-/* #right {
-    object-position: end;
-    -webkit-border-radius: 40px 0px 0px 40px;
-    -moz-border-radius: 40px 0px 0px 40px;
-    border-radius: 40px 0px 0px 40px;
-
-}
-*/
-
-
-
-/* flexCenter is the love child of flex-center flex-column.... (i know, inter-species breeding is not cool)
-2 classes > 1 abomination,
-but it too has earned its spot here just like the Hashtag twins; Left and Right
-flexTop was in on the fuckery too */
-
-/* .flexCenter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 0.5rem;
-    width: 100%;
-    font-size: 1.8rem;
-    border: 0.1rem solid rgb(86, 165, 235, 0.25);
-    background-color: rgb(22, 151, 140);
-    -webkit-border-radius: 0px 0px 40px 40px;
-    -moz-border-radius: 0px 0px 40px 40px;
-    border-radius: 0px 0px 40px 40px;
-    box-shadow: inset 2px 2px 41px -5px black;
-}
-/* .flexTop {
-    display: flex;
-    font-size: 1.8rem;
-    padding: 2rem;
-    max-width: 20%;
-    text-align: center;
-    border: 0.1rem solid #56a5eb;
-    margin: 1rem;
-    text-decoration: none;
-    color: #56a5eb;
-    background-color: white;
-} */
-
-/* sorry to drag you through the graveyard, real professional i know, it as imporessive as my sweet spellin skils */
 
 #HASHTAG-superAwsomeCoolJPGofQUIZhaveFUNtypingTHISagain {
     margin-top: 7rem;
@@ -122,22 +67,53 @@ flexTop was in on the fuckery too */
 }
 
 .left {
-    display: flex;
     font-size: 1.8rem;
-    padding: 2rem;
-    max-width: 20%;
+    padding: 1rem 0;
+    width: 20rem;
     text-align: center;
     border: 0.1rem solid #56a5eb;
-    margin: 1rem;
-    text-decoration: none;
-    color: #56a5eb;
-    background-color: white;
-    -webkit-border-radius: 0px 40px 40px 0px;
-    -moz-border-radius: 0px 40px 40px 0px;
-    border-radius: 0px 40px 40px 0px;
-    box-shadow: inset 2px 2px 41px -5px black;
-    background-color: rgba(86, 185, 235, 0.5);
+    margin-bottom: 3rem;
+    border: 2px solid #0DA454;
+    border-radius: 40px;
+    background: rgb(135, 224, 253);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(135, 224, 253, 1) 0%, rgba(83, 203, 241, 1) 40%, rgba(5, 171, 224, 1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(135, 224, 253, 1) 0%, rgba(83, 203, 241, 1) 40%, rgba(5, 171, 224, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(135, 224, 253, 1) 0%, rgba(83, 203, 241, 1) 40%, rgba(5, 171, 224, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#87e0fd', endColorstr='#05abe0', GradientType=1);
+    -webkit-box-shadow: -9px 5px 15px 5px #FFE488,
+        -7px -5px 15px 5px #8CFF85,
+        -10px 10px 15px 7px #FF616B,
+        -6px 5px 0px 5px rgba(0, 0, 0, 0);
+    box-shadow: -9px 5px 15px 5px #FFE488,
+        -7px -5px 15px 5px #8CFF85,
+        -10px 10px 15px 7px #FF616B,
+        -6px 5px 0px 5px rgba(0, 0, 0, 0),
+        inset 0px 5px 59px -13px #42A34E,
+        5px -5px 5px 0px #DADDD2;
+}
 
+.containerTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgb(29, 139, 112);
+    -webkit-border-radius: 40px 40px 0px 0px;
+    -moz-border-radius: 40px 40px 0px 0px;
+    border-radius: 40px 40px 0px 0px;
+}
+
+.containerIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgb(29, 139, 112);
+    -webkit-border-radius: 40px 40px 40px 40px;
+    -moz-border-radius: 40px 40px 40px 40px;
+    border-radius: 40px 40px 40px 40px;
 }
 
 .container {
@@ -145,51 +121,41 @@ flexTop was in on the fuckery too */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgb(29, 139, 112);
+    -webkit-border-radius: 0px 0px 40px 40px;
+    -moz-border-radius: 0px 0px 40px 40px;
+    border-radius: 0px 0px 40px 40px;
 }
 
 #question {
     text-align: center;
     box-shadow: inset 2px 2px 41px -5px black;
     background-color: rgba(86, 185, 235, 0.5);
-    transform: translate(-0.1rem);
-    /* transition: transform 150ms; */
-    /* display: flex; */
     -webkit-border-radius: 40px 40px 40px 40px;
     -moz-border-radius: 40px 40px 40px 40px;
     border-radius: 40px 40px 40px 40px;
     padding: 2rem;
 }
 
-.choiceContainer {
+.choiceText {
     align-self: central;
     box-shadow: inset 2px 2px 41px -5px black;
-    background-color: rgba(86, 185, 235, 0.5);
-    transform: translate(-0.1rem);
-    /* transition: transform 150ms; */
-    /* display: flex; */
-    -webkit-border-radius: 40px 40px 40px 40px;
-    -moz-border-radius: 40px 40px 40px 40px;
-    border-radius: 40px 40px 40px 40px;
-    margin: .25rem;
-
-
-}
-
-.choicePrefix {
     cursor: pointer;
     padding: 1.5rem 2.5rem;
-    /* margin-left: 3rem; */
     background-color: #225a01;
-    color: slategray;
+    color: springgreen;
+    padding: 2rem;
+    margin: 2rem 5rem;
+    /* border: 1rem; */
     -webkit-border-radius: 40px 0px 40px 0px;
     -moz-border-radius: 40px 0px 40px 0px;
     border-radius: 40px 0px 40px 0px;
-}
-
-.choiceText {
-    padding: 1.5rem;
-    margin-left: 7rem;
+    -moz-transform: scale(1.5) rotate(341deg) skew(2deg, 10deg);
+    -webkit-transform: scale(1.5) rotate(341deg) skew(2deg, 10deg);
+    -o-transform: scale(1.5) rotate(341deg) skew(2deg, 10deg);
+    -ms-transform: scale(1.5) rotate(341deg) skew(2deg, 10deg);
+    transform: scale(1.5) rotate(341deg) skew(2deg, 10deg);
 }
 
 /* button shit */
@@ -201,9 +167,6 @@ flexTop was in on the fuckery too */
     text-align: center;
     border: 0.1rem solid #56a5eb;
     margin-bottom: 3rem;
-    /* text-decoration: none;
-    color: #56a5eb;
-    background-color: white; */
     border: 2px solid #0DA454;
     border-radius: 40px;
     background: rgb(135, 224, 253);
