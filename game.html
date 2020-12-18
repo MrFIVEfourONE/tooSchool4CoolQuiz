@@ -11,27 +11,36 @@
 </head>
 
 <body>
-    <div id="timer">
+    <!-- this element highName is hidden until end game and functions as the highscore page -->
+    <header class="left" id="timer">
         <div id="time-remaining">Time: 60</div>
-    </div>
-    <div class="peekAboo">
+    </header>
+    <article class="highName">
         <div class="container">
-            <h2 id="question"></h2>
-            <div class="choiceContainer">
-                <button class="choicePrefix choiceText" data-number="1"></button>
-            </div>
-            <div class="choiceContainer">
-                <button class="choicePrefix choiceText" data-number="2"></button>
-            </div>
-            <div class="choiceContainer">
-                <button class="choicePrefix choiceText" data-number="3"></button>
-            </div>
-            <div class="choiceContainer">
-                <button class="choicePrefix choiceText" data-number="4"></button>
+            <div id="highScores" class="flex-center flex-column">
+                <h1 id="finalScore">High Scores</h1>
+                <ul id="highScoresList"></ul>
+                <form>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname">
+                </form>
+                <a class="btn" href="/index.html">Go Home</a>
             </div>
         </div>
-    </div>
-    </div>
+    </article>
+    <!-- ^thats the end of th hidden highscore page^ -->
+    <!-- the begging of the default view of this page: the quiz -->
+    <article class="peekAboo">
+        <div class="container">
+            <h2 id="question"></h2>
+            <button class="choicePrefix choiceText choiceContainer" data-number="1"></button>
+            <button class="choicePrefix choiceText choiceContainer"" data-number=" 2"></button>
+            <button class="choicePrefix choiceText choiceContainer"" data-number=" 3"></button>
+            <button class="choicePrefix choiceText choiceContainer" data-number="4"></button>
+        </div>
+    </article>
     <script src="/game.js"></script>
 </body>
 

@@ -61,6 +61,8 @@ let questions = [ {
 
 
 const startGame = () => {
+    document.querySelector( ".highName" ).style.display = "none"; //hide
+    // document.querySelector( ".peakAboo" ).style.display = "block";
     questionCounter = 0;
     score = 0;
     timeRemaining = 60;
@@ -115,6 +117,7 @@ function timeTick() {
 function endQuiz() {
     clearInterval( timerId );
     document.querySelector( ".peekAboo" ).style.display = "none"; //hide
+    document.querySelector( ".highName" ).style.display = "block";
 }
 
 startGame()
@@ -123,12 +126,12 @@ startGame()
 
 
 
-    // hide the quiz
-    // input user name initial;s
-    // save to local storage
-    // open the highscore page
+// hide the quiz
+// input user name initial;s
+// save to local storage
+// open the highscore page
 
-    // document.getElementById( "id" ).style.display = "block"; //show
+
 
 
 // assign id to each of options in dom

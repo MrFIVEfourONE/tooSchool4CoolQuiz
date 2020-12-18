@@ -1,10 +1,11 @@
 /* some pre defined classes..... i think that wierd red squshy thing inside my head has had a lightbulb moment.... */
+
 input::placeholder {
     color: #aaa;
 }
 
-/* maybe i could fix up ----1ONE1 BADASS---- style.css sheet with a bunch of generic shit like the following lines of code and then i would get real famular with my pre built style sheet ' . ' ' # ' thingys and then every time i start a new project i will automaticaly link it..... perhaps i shall call it flipFlopStrap.css!!!!
-  HEY! dont go stealing my awsome idea and change the name to... something like shoeLace or something equally as lame, and dont laugh at me spelling */
+/* maybe i could fix up ----1ONE1 BADASS---- style.css sheet with a bunch of generic shit like the following lines of code and then i would get real famular with my pre built style sheet ' . ' ' # ' thingys and then every time i start a new project i will automaticaly link it...perhaps i shall call it flipFlopStrap.css!!!!
+HEY! dont go stealing my awsome idea and change the name to... something like shoeLace or something equally as lame, and dont laugh at me spelling */
 
 .flex-column {
     display: flex;
@@ -24,16 +25,11 @@ input::placeholder {
     text-align: center;
 }
 
-/* more general stuff */
-#sectionIndaBack {
-    display: flex;
-}
-
-.headerContainer {
+/* .headerContainer {
     display: flex;
     flex-direction: row;
     background-color: burlywood;
-}
+} */
 
 /* this next one seems silly until it doesnt... i was like dude dont code shit you want to be hidden! JEZZ dumby!  Then i rememberd that
 (dynamicDOMjsMANIPULATION => css , html)....
@@ -54,15 +50,7 @@ thats what they say anyway. i belive it to be evil, black magic if you will */
     border-radius: 40px 0px 0px 40px;
 
 }
-
-
-#left {
-    position: start;
-    -webkit-border-radius: 0px 40px 40px 0px;
-    -moz-border-radius: 0px 40px 40px 0px;
-    border-radius: 0px 40px 40px 0px;
-
-} */
+*/
 
 
 
@@ -133,7 +121,25 @@ flexTop was in on the fuckery too */
     border-radius: 40px;
 }
 
-/*  line 106-143 are where all the black magic is going to take placegit */
+.left {
+    display: flex;
+    font-size: 1.8rem;
+    padding: 2rem;
+    max-width: 20%;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    margin: 1rem;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+    -webkit-border-radius: 0px 40px 40px 0px;
+    -moz-border-radius: 0px 40px 40px 0px;
+    border-radius: 0px 40px 40px 0px;
+    box-shadow: inset 2px 2px 41px -5px black;
+    background-color: rgba(86, 185, 235, 0.5);
+
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -144,24 +150,36 @@ flexTop was in on the fuckery too */
 
 #question {
     text-align: center;
-}
-
-.choiceContainer {
     box-shadow: inset 2px 2px 41px -5px black;
     background-color: rgba(86, 185, 235, 0.5);
-    transform: translateY(-0.1rem);
-    transition: transform 150ms;
-    display: flex;
+    transform: translate(-0.1rem);
+    /* transition: transform 150ms; */
+    /* display: flex; */
     -webkit-border-radius: 40px 40px 40px 40px;
     -moz-border-radius: 40px 40px 40px 40px;
     border-radius: 40px 40px 40px 40px;
+    padding: 2rem;
+}
+
+.choiceContainer {
+    align-self: central;
+    box-shadow: inset 2px 2px 41px -5px black;
+    background-color: rgba(86, 185, 235, 0.5);
+    transform: translate(-0.1rem);
+    /* transition: transform 150ms; */
+    /* display: flex; */
+    -webkit-border-radius: 40px 40px 40px 40px;
+    -moz-border-radius: 40px 40px 40px 40px;
+    border-radius: 40px 40px 40px 40px;
+    margin: .25rem;
+
 
 }
 
 .choicePrefix {
     cursor: pointer;
     padding: 1.5rem 2.5rem;
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
     background-color: #225a01;
     color: slategray;
     -webkit-border-radius: 40px 0px 40px 0px;
