@@ -1,9 +1,11 @@
 // dynamicaly run questions through a loop with an array and post to elements in html
 
 const question = document.getElementById( "question" );
-const choices = Array.from( document.getElementsByClassName( "choiceT/8ext" ) );
+const choices = Array.from( document.getElementsByClassName( "choiceText" ) );
+const questionCounterText = document.getElementById( "questionCounter" );
+const scoreText = document.getElementById( "score" );
 
-let currentQuestion = {};
+// let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
@@ -52,43 +54,61 @@ let questions = [ {
     },
 ];
 
-const correctBonus = 10;
-const maxQuestions = 3;
 
-function startGame() {
+
+const startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [ ...questions ];
     getNewQuestion();
 };
 
-function getNewQuestion() {
-    if ( availableQuestions === 0 || maxQuestions <= questionCounter ) {
-        return window.location.assign( "/end.html" );
+
+const getNewQuestion = () => {
+    if ( questionCounter >= questions.length ) {
+        // call endQuiz function to end quest
     }
-}
-questionCounter++;
-const questionIndex = math.floor( Math.random() * availableQuestions.length );
-question.innerText = currentQuestion.question;
+    let currentQuestion = questions[ questionCounter ];
 
-choices.forEach( ( choice ) => {
-    const number = choice.dataset[ "number" ];
-    choice.innerText = currentQuestion[ "choice" + number ];
+    const questionIndex = Math.floor( Math.random() * availableQuestions.length );
+    question.innerText = currentQuestion.question;
 
-} );
-
-availableQuestions.splice( questionIndex, 1 );
-acceptingAnswer = true;
-
-choices.forEach( ( choice ) => {
-    choice.addEventListener( "click", ( e ) => {
-        if ( !acceptingAnswers ) return;
-
-        acceptingAnswers = false;
-        const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset[ "number" ];
-        getNewQuestion();
+    choices.forEach( ( choice ) => {
+        const number = choice.dataset[ "number" ];
+        choice.innerText = currentQuestion[ "choice" + number ];
+        console.log( "is this one triggering" )
     } );
-} );
 
+    availableQuestions.splice( questionIndex, 1 );
+    // acceptingAnswer = true;
+
+    choices.forEach( ( choice ) => {
+        console.log( "choice", choice )
+        choice.addEventListener( "click", ( e ) => {
+            // if ( !acceptingAnswers ) return;
+            console.log( "clicked inside of choices.foreach" )
+            questionCounter++;
+            // acceptingAnswers = false;
+            const selectedChoice = e.target;
+            const selectedAnswer = selectedChoice.dataset[ "number" ];
+            getNewQuestion();
+        } );
+    } );
+}
+
+function endQuiz() {
+    // hide the quiz
+    // input user name initial;s
+    // save to local storage
+    // open the highscore page
+
+    // document.getElementById( "id" ).style.display = "none"; //hide
+    // document.getElementById( "id" ).style.display = "block"; //show
+
+}
+
+// assign id to each of options in dom
+// check if user clicked the data-numbr
+// onclick listener if data-num === index number that
+// qusetions[0].answer === 3
 startGame()

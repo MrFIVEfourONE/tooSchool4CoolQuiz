@@ -100,11 +100,43 @@ flexTop was in on the fuckery too */
 
 /* sorry to drag you through the graveyard, real professional i know, it as imporessive as my sweet spellin skils */
 
+#HASHTAG-superAwsomeCoolJPGofQUIZhaveFUNtypingTHISagain {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    box-shadow: 2rem;
+    min-height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #0DA454;
+    border-radius: 40px;
+    background: rgb(135, 224, 253);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(135, 224, 253, 1) 0%, rgba(83, 203, 241, 1) 40%, rgba(5, 171, 224, 1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(135, 224, 253, 1) 0%, rgba(83, 203, 241, 1) 40%, rgba(5, 171, 224, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(135, 224, 253, 1) 0%, rgba(83, 203, 241, 1) 40%, rgba(5, 171, 224, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#87e0fd', endColorstr='#05abe0', GradientType=1);
+    -webkit-box-shadow: -9px 5px 15px 5px #FFE488,
+        -7px -5px 15px 5px #8CFF85,
+        -10px 10px 15px 7px #FF616B,
+        -6px 5px 0px 5px rgba(0, 0, 0, 0);
+    box-shadow: -9px 5px 15px 5px #FFE488,
+        -7px -5px 15px 5px #8CFF85,
+        -10px 10px 15px 7px #FF616B,
+        -6px 5px 0px 5px rgba(0, 0, 0, 0),
+        inset 0px 5px 59px -13px #42A34E,
+        5px -5px 5px 0px #DADDD2;
+}
 
+#HASHTAG-superAwsomeCoolJPGofQUIZhaveFUNtypingTHISagain>img {
+    border: 8px dotted #0DA454;
+    border-radius: 40px;
+}
 
-/*  line 106-143 are where all the black magic is going to take place */
+/*  line 106-143 are where all the black magic is going to take placegit */
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -150,10 +182,27 @@ flexTop was in on the fuckery too */
     width: 20rem;
     text-align: center;
     border: 0.1rem solid #56a5eb;
-    margin-bottom: 1rem;
-    text-decoration: none;
+    margin-bottom: 3rem;
+    /* text-decoration: none;
     color: #56a5eb;
-    background-color: white;
+    background-color: white; */
+    border: 2px solid #0DA454;
+    border-radius: 40px;
+    background: rgb(135, 224, 253);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(135, 224, 253, 1) 0%, rgba(83, 203, 241, 1) 40%, rgba(5, 171, 224, 1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(135, 224, 253, 1) 0%, rgba(83, 203, 241, 1) 40%, rgba(5, 171, 224, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(135, 224, 253, 1) 0%, rgba(83, 203, 241, 1) 40%, rgba(5, 171, 224, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#87e0fd', endColorstr='#05abe0', GradientType=1);
+    -webkit-box-shadow: -9px 5px 15px 5px #FFE488,
+        -7px -5px 15px 5px #8CFF85,
+        -10px 10px 15px 7px #FF616B,
+        -6px 5px 0px 5px rgba(0, 0, 0, 0);
+    box-shadow: -9px 5px 15px 5px #FFE488,
+        -7px -5px 15px 5px #8CFF85,
+        -10px 10px 15px 7px #FF616B,
+        -6px 5px 0px 5px rgba(0, 0, 0, 0),
+        inset 0px 5px 59px -13px #42A34E,
+        5px -5px 5px 0px #DADDD2;
 }
 
 .btn:hover {
