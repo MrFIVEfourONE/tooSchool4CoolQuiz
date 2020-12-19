@@ -72,9 +72,7 @@ const startGame = () => {
 
 
 const getNewQuestion = () => {
-    if ( questionCounter >= questions.length ) {
-        // call endQuiz function to end quest
-    }
+    // if ( questionCounter >= questions.length ) {}
     let currentQuestion = questions[ questionCounter ];
     question.innerText = currentQuestion.question;
 
@@ -85,13 +83,9 @@ const getNewQuestion = () => {
     choices.forEach( ( choice ) => {
         choice.addEventListener( "click", ( e ) => {
             e.preventDefault();
-            // if ( !acceptingAnswers ) return;
-            // console.log( "clicked inside of choices.foreach" )
-            // acceptingAnswers = false;
             const selectedChoice = e.target;
             const selectedAnswer = selectedChoice.dataset[ "number" ];
             console.log( selectedAnswer, questions[ questionCounter ].answer )
-            // added durrign Office Hrs
             if ( selectedAnswer === questions[ questionCounter ].answer ) {
                 questionCounter++;
                 getNewQuestion();
@@ -110,6 +104,8 @@ function timeTick() {
 
     if ( timeRemaining <= 0 ) {
         endQuiz();
+    } else if ( questionCounter >= questions.length ) {
+        endQuiz();
     }
 }
 
@@ -119,6 +115,12 @@ function endQuiz() {
     document.querySelector( ".peekAboo" ).style.display = "none"; //hide
     document.querySelector( ".highName" ).style.display = "block";
 }
+
+// save timeRemaining
+// append it to an empty div under high scores with user inputed name
+
+// make a kick ass readme
+// post and be done
 
 startGame()
 
