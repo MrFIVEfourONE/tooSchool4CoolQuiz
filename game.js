@@ -103,8 +103,10 @@ function timeTick() {
     timerEl.textContent = `Time: ${ timeRemaining }`
 
     if ( timeRemaining <= 0 ) {
+        localStorage.setItem( 'timeRemaining', timeRemaining );
         endQuiz();
     } else if ( questionCounter >= questions.length ) {
+        localStorage.setItem( 'timeRemaining', timeRemaining );
         endQuiz();
     }
 }
@@ -114,7 +116,17 @@ function endQuiz() {
     clearInterval( timerId );
     document.querySelector( ".peekAboo" ).style.display = "none"; //hide
     document.querySelector( ".highName" ).style.display = "block";
+
 }
+startGame()
+
+// let submitButton = getElementById( .submit )
+
+
+// var retrievedScore = localStorage.getItem( 'timeRemaining' );
+// addEventListener("click", listener)
+
+// apend tr with the intials on hs page.
 
 // save timeRemaining
 // append it to an empty div under high scores with user inputed name
@@ -122,7 +134,6 @@ function endQuiz() {
 // make a kick ass readme
 // post and be done
 
-startGame()
 
 
 
