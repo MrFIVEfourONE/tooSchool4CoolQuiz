@@ -2,29 +2,24 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>High Scores</title>
-    <link rel="stylesheet" href="/flipFlopStrap.css" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 
 <body>
-    <div class="container">
-        <div id="highScores" class="flex-center flex-column">
-            <form>
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname">
-            </form>
-            <h1 id="finalScore">High Scores</h1>
-            <ul id="highScoresList"></ul>
-            <a class="btn" href="/">Go Home</a>
+    <article class="highName">
+        <div class="container">
+            <div id="highScores" class="flex-center flex-column">
+                <label id="createLabel">Enter Your Initials</label>
+                <input type="text" id="initials">
+                <button type="submit" class="btn" id="submit">Submit</button>
+            </div>
+            <Div>
+                <button class="btn" href="/index.html">Go Home</button>
+            </div>
         </div>
-    </div>
-    <script src="highscores.js"></script>
+    </article>
 </body>
 
 </html>

@@ -14,6 +14,7 @@ let questionCounter = 0;
 let timerEl = document.querySelector( '#time-remaining' )
 let timerId;
 let timeRemaining;
+let initials;
 
 let questions = [ {
         question: "JavaScript is a ___ - side programming language.",
@@ -61,13 +62,12 @@ let questions = [ {
 
 
 const startGame = () => {
-    document.querySelector( ".highName" ).style.display = "none"; //hide
-    // document.querySelector( ".peakAboo" ).style.display = "block";
     questionCounter = 0;
     score = 0;
     timeRemaining = 60;
     timerId = setInterval( timeTick, 1000 );
     getNewQuestion();
+
 };
 
 
@@ -85,7 +85,7 @@ const getNewQuestion = () => {
             e.preventDefault();
             const selectedChoice = e.target;
             const selectedAnswer = selectedChoice.dataset[ "number" ];
-            console.log( selectedAnswer, questions[ questionCounter ].answer )
+            // console.log( selectedAnswer, questions[ questionCounter ].answer )
             if ( selectedAnswer === questions[ questionCounter ].answer ) {
                 questionCounter++;
                 getNewQuestion();
@@ -101,7 +101,6 @@ const getNewQuestion = () => {
 function timeTick() {
     timeRemaining--;
     timerEl.textContent = `Time: ${ timeRemaining }`
-
     if ( timeRemaining <= 0 ) {
         localStorage.setItem( 'timeRemaining', timeRemaining );
         endQuiz();
@@ -114,40 +113,9 @@ function timeTick() {
 
 function endQuiz() {
     clearInterval( timerId );
-    document.querySelector( ".peekAboo" ).style.display = "none"; //hide
-    document.querySelector( ".highName" ).style.display = "block";
-
+    window.location.replace( "./highScores.html" )
 }
+
+
+
 startGame()
-
-// let submitButton = getElementById( .submit )
-
-
-// var retrievedScore = localStorage.getItem( 'timeRemaining' );
-// addEventListener("click", listener)
-
-// apend tr with the intials on hs page.
-
-// save timeRemaining
-// append it to an empty div under high scores with user inputed name
-
-// make a kick ass readme
-// post and be done
-
-
-
-
-
-
-// hide the quiz
-// input user name initial;s
-// save to local storage
-// open the highscore page
-
-
-
-
-// assign id to each of options in dom
-// check if user clicked the data-numbr
-// onclick listener if data-num === index number that
-//  === 3
