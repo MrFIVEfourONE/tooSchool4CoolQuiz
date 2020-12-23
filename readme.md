@@ -31,7 +31,9 @@ I am deploying this because i have givin it all the love i can afford right now.
 
 
 ## Setup
-Just go to the deployed page as it is only html, css, and JavaScript
+Just go to the deployed page:
+[Code Quiz link](https://mrfivefourone.github.io/tooSchool4CoolQuiz/)
+s it is only html, css, and JavaScript
 
 To-do list:
 * Wow improvement to be done 1
