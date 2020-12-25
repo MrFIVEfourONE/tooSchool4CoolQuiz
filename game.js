@@ -3,12 +3,10 @@ const choices = Array.from( document.getElementsByClassName( "choiceText" ) );
 const questionCounterText = document.getElementById( "questionCounter" );
 const scoreText = document.getElementById( "score" );
 
-// let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 
-// Time stuff
 let timerEl = document.querySelector( '#time-remaining' )
 let timerId;
 let timeRemaining;
@@ -57,8 +55,6 @@ let questions = [ {
     },
 ];
 
-
-
 const startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -68,9 +64,7 @@ const startGame = () => {
 
 };
 
-
 const getNewQuestion = () => {
-    // if ( questionCounter >= questions.length ) {}
     let currentQuestion = questions[ questionCounter ];
     question.innerText = currentQuestion.question;
 
@@ -83,7 +77,6 @@ const getNewQuestion = () => {
             e.preventDefault();
             const selectedChoice = e.target;
             const selectedAnswer = selectedChoice.dataset[ "number" ];
-            // console.log( selectedAnswer, questions[ questionCounter ].answer )
             if ( selectedAnswer === questions[ questionCounter ].answer ) {
                 questionCounter++;
                 getNewQuestion();
@@ -108,12 +101,9 @@ function timeTick() {
     }
 }
 
-
 function endQuiz() {
     clearInterval( timerId );
     window.location.replace( "./highScores.html" )
 }
-
-
 
 startGame()
