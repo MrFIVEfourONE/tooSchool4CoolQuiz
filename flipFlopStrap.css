@@ -162,7 +162,7 @@ body {
 
 .btn {
     font-size: 1.8rem;
-    padding: 1rem 0;
+    padding: 2rem;
     width: 20rem;
     text-align: center;
     border: 0.1rem solid #56a5eb;
@@ -221,10 +221,48 @@ form {
 }
 
 input {
-    margin-bottom: 1rem;
+    background-color: rgb(192, 250, 221);
+    color: rgb(18, 173, 96);
+    margin-bottom: 3rem;
     width: 20rem;
     padding: 1.5rem;
     font-size: 1.8rem;
     border: none;
     box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    -webkit-border-radius: 40px 0px 40px 0px;
+    -moz-border-radius: 40px 0px 40px 0px;
+    border-radius: 40px 0px 40px 0px;
+}
+
+/* the last shit */
+
+.bullHonkey {
+    font-size: 2rem;
+    text-align: center;
+    box-shadow: inset 2px 2px 41px -5px black;
+    background-color: rgb(192, 250, 221);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(135, 224, 253, 1) 0%, rgba(83, 203, 241, 1) 40%, rgba(5, 171, 224, 1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(135, 224, 253, 1) 0%, rgba(83, 203, 241, 1) 40%, rgba(5, 171, 224, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(135, 224, 253, 1) 0%, rgba(83, 203, 241, 1) 40%, rgba(5, 171, 224, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#87e0fd', endColorstr='#05abe0', GradientType=1);
+    -webkit-box-shadow: -9px 5px 15px 5px #FFE488,
+        -7px -5px 15px 5px #8CFF85,
+        -10px 10px 15px 7px #FF616B,
+        -6px 5px 0px 5px rgba(0, 0, 0, 0);
+    box-shadow: -9px 5px 15px 5px #FFE488,
+        -7px -5px 15px 5px #8CFF85,
+        -10px 10px 15px 7px #FF616B,
+        -6px 5px 0px 5px rgba(0, 0, 0, 0),
+        inset 0px 5px 59px -13px #42A34E,
+        5px -5px 5px 0px #DADDD2;
+    padding: 2rem;
+    margin: 6rem;
+    -webkit-border-radius: 40px 0px 40px 0px;
+    -moz-border-radius: 40px 0px 40px 0px;
+    border-radius: 40px 0px 40px 0px;
+    -moz-transform: scale(1.5) rotate(341deg) skew(2deg, 10deg);
+    -webkit-transform: scale(1.5) rotate(341deg) skew(2deg, 10deg);
+    -o-transform: scale(1.5) rotate(341deg) skew(2deg, 10deg);
+    -ms-transform: scale(1.5) rotate(341deg) skew(2deg, 10deg);
+    transform: scale(1.5) rotate(341deg) skew(2deg, 10deg);
 }

@@ -9,18 +9,32 @@
 </head>
 
 <body>
-    <article class="highName">
-        <div class="container">
+    <article id="highName">
+        <div class="containerIndex">
             <div id="highScores" class="flex-center flex-column">
-                <label id="createLabel">Enter Your Initials</label>
+                <label class="bullHonkey" id="createLabel">Enter Your Initials</label>
                 <input type="text" id="initials">
                 <button type="submit" class="btn" id="submit">Submit</button>
             </div>
-            <Div>
-                <button class="btn" href="/index.html">Go Home</button>
+            <div>
+                <a class="btn" href="./index.html">Go Home</a>
             </div>
         </div>
     </article>
+    <article id="highscoreList" style="display: none;">
+        <div class="containerIndex">
+            <div class="flex-center flex-column">
+                <div class="bullHonkey" id="displayHide"></div>
+                <br>
+                <div>
+                    <a class="btn" href="./index.html">Go Home</a>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer class="containerIndex">
+        <h2 class="question"> this one has gremlins </h2>
+    </footer>
     <script src="./highScores.js"></script>
 </body>
 
