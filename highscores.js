@@ -9,7 +9,7 @@ function init() {
         console.log( timeRemaining );
         document.getElementById( "highName" ).style.display = "none"; //hide
         // document.getElementById( "highName" ).classList.add( "hide" )
-        document.getElementById( "highscoreList" ).style.display = "block"; //show
+        document.getElementById( "highScoreList" ).style.display = "block"; //show
         // document.getElementById( "highscoreList" ).classList.remove( "hide" )
         document.getElementById( "displayHide" ).textContent = "  " + initials + "  did it in:  " + timeRemaining
     } );

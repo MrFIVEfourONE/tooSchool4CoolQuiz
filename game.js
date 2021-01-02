@@ -103,7 +103,6 @@ function timeTick() {
 
 function endQuiz() {
     clearInterval( timerId );
-    window.location.replace( "./highScores.html" )
-}
-
 startGame()
+    window.location.replace("./highScores.html")
+}
