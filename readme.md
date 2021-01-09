@@ -18,31 +18,50 @@ I wanted to create a quiz that focused one dynamically updating the DOM so it co
 * [Inspiration](#inspiration)
 * [Contact](#contact)
 
-## General info
+## General info (roadmap)
+
+I have gotten this Quiz to an accepteble point to leave it for a while and come back to it later when I am grasping this stuff better. ( 1/8/21 )
 
 I struggled with the project more then any, and the whole process was a hug painful learning curve. I learned that I get ahead of myself very easily, because I understand how JavaScript works and I can very easily put tighter something AAWSMOME in my head that will or would work if only I had the missing dots already in my head. So in theory and during brainstorming I’m a genius, then when its time to turn my grandiose but practical application on paper I struggle more then anything. Its like being stuck in a country that does not understand your world but gets all of your body and facial expressions.
 
-I am deploying this because i have givin it all the love i can afford right now. Im on to bigger and better things, maybe with a more humble misdset this time around.
+I am deploying this because i have givin it all the love i can afford right now. Im on to bigger and better things, maybe with a more humble misdset this time around. ( 12/22/21 )
 
 ## Screenshots
-![Home Page](./assets/indexSSquiz.jpg)
-![Quiz Page](./assets/gameSSquiz.jpg)
-![unfinished](./unfinished.jpg)
 
+Like the HighScore Page says this one has Gremlins. It works right up until someone else goes to the deployed page.
 
+![Home Page](./assets/indexPIC.jpg)
+
+There is proof that Idex and Game are working, timer, decrement in time with a wrong answer, new question populationg to DOM.
+
+![Quiz Page](./assets/gamePIC.jpg)
+
+Here is proof that you can put your Initials in and save them from Local Storage with your score.
+
+![High Score Page](./assets/highscorePIC.jpg)
 ## Setup
+
 Just go to the deployed page:
+
 [Code Quiz link](https://mrfivefourone.github.io/tooSchool4CoolQuiz/)
-s it is only html, css, and JavaScript
+
+(Aperently not too COOL for SCHOOL after all....!)
 
 To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
 
-## Status
-Project is: _in progress_, I have to leave this one for now and get a win under my belt. Im stuck on some things here and the worst thing I could do is dwell on it. Im going to move on and once i am refreshed I WILL be back to make this what it should be. What im truly capable of.
+* There is no real Validation for making sure the user inputs only initials and appropreait ones at that, There should be something that lets you know if you got the question right or wrong, also emidiatly after the last question it jumps the the HighScore Page.
+* For time sake I am leaving this as is, I have learned some valuable leasons with this one, When i have time I will come back and do this justice. Mkae it look like something a professional would want to use in a class situation.
+
+## Status (roadmap)
+
+Project is: _in progress_,( 12/22/20 )I have to leave this one for now and get a win under my belt. Im stuck on some things here and the worst thing I could do is dwell on it. Im going to move on and once i am refreshed I WILL be back to make this what it should be. What im truly capable of.
+
+Project is: _WORKING_, ( 1/8/21 )I have had some time to adjust some things and make it work at the verry minumum. I wouldnt call this finished quit yet.
 
 ## Inspiration
+
 Dane Shrewsberry : a professional confidant who has helped me through many coding problems.
+
+Janani N. : another peer in the industry that helped me learn from my mistakes.
 
 [@flynerdpl](https://www.flynerd.pl/) : for this awsome readme.md outline.
