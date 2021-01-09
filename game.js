@@ -79,6 +79,7 @@ const getNewQuestion = () => {
             const selectedAnswer = selectedChoice.dataset[ "number" ];
             if ( selectedAnswer === questions[ questionCounter ].answer ) {
                 questionCounter++;
+                score += 10
                 getNewQuestion();
             } else {
                 timeRemaining = timeRemaining - 10;
@@ -102,6 +103,7 @@ function timeTick() {
 }
 
 function endQuiz() {
+    localStorage.setItem('latest-score', score);
     clearInterval( timerId );
     window.location.replace( "./highscores.html" )
 }
