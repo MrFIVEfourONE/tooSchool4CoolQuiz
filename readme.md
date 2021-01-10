@@ -28,15 +28,11 @@ I am deploying this because i have givin it all the love i can afford right now.
 
 ## Screenshots
 
-Like the HighScore Page says this one has Gremlins. It works right up until someone else goes to the deployed page.
+Like the HighScore Page says this one has Gremlins. It does however work now!!!!
 
 ![Home Page](./assets/indexPIC.jpg)
 
-There is proof that Idex and Game are working, timer, decrement in time with a wrong answer, new question populationg to DOM.
-
 ![Quiz Page](./assets/gamePIC.jpg)
-
-Here is proof that you can put your Initials in and save them from Local Storage with your score.
 
 ![High Score Page](./assets/highscorePIC.jpg)
 ## Setup
@@ -49,7 +45,8 @@ Just go to the deployed page:
 
 To-do list:
 
-* There is no real Validation for making sure the user inputs only initials and appropreait ones at that, There should be something that lets you know if you got the question right or wrong, also emidiatly after the last question it jumps the the HighScore Page.
+* Make the highScores print to a list.
+
 * For time sake I am leaving this as is, I have learned some valuable leasons with this one, When i have time I will come back and do this justice. Mkae it look like something a professional would want to use in a class situation.
 
 ## Status (roadmap)
@@ -57,6 +54,8 @@ To-do list:
 Project is: _in progress_,( 12/22/20 )I have to leave this one for now and get a win under my belt. Im stuck on some things here and the worst thing I could do is dwell on it. Im going to move on and once i am refreshed I WILL be back to make this what it should be. What im truly capable of.
 
 Project is: _WORKING_, ( 1/8/21 )I have had some time to adjust some things and make it work at the verry minumum. I wouldnt call this finished quit yet.
+
+Project is; _Finished_, (later in day 1/8/21)I got everyhting to work, right now my only qualm is that is doest list the highscores in a nice neat list but as one continues sentence.
 
 ## Inspiration
 
